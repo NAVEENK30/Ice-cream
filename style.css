@@ -6,11 +6,13 @@ body{
     overflow-x: hidden ;
 }
 .front{
-    background-image: url("ice-cream-balls-plate.jpg");
+    /* background-image: url("ice-cream-balls-plate.jpg"); */
+    background-image: url("flat-lay-ice-cream-cone-with-berries-with-copy-space.jpg");
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 
 }
 nav{
@@ -34,13 +36,21 @@ a{
 }
 a:hover{
     text-shadow: 0 0 10px rgb(235, 22, 58);
-    color: black;
+    color: rgb(255, 255, 255);
 }
 nav img{
     width: 90px;
     margin-left:80px;
+    
 }
-
+.hi{
+    position: absolute;left: 60%;
+    top: 50%;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px white;
+   
+    font-size: 70px;
+}
 .p2{
     width: 100vw;
     height: 100vh;
@@ -55,13 +65,13 @@ nav img{
     grid-template-columns: repeat(2,1fr);
     position: relative;
     padding: 100px;
-    gap: 40%;
+    gap: 30%;
     
 }
 
 .con1{
  position:relative;
-top: 100%;
+top: 50%;
 }
 
 
@@ -72,13 +82,14 @@ top: 20%;
 }
 .con2{
     position:relative;
-    top: 100%;
+    top: 50%;
+    left: 10%;
     
 }
 
 .con1 h1{
     
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     border-bottom: 4px dotted rgb(255, 255, 255);
     
@@ -87,7 +98,8 @@ top: 20%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
     padding-top: 10px;
-    color: rgb(0, 0, 0);
+    color: white;
+  
 }
 /* .con1 img{
 width: 150px;
@@ -99,7 +111,7 @@ border-radius: 50%;
 
 .con2 h1{
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
      border-bottom: 4px dotted rgb(255, 254, 254);
 }
@@ -115,7 +127,11 @@ border-radius: 50%;
     
     width: 100vw;
     height: 100vh;
-    background-color: azure;
+     background-color: azure; 
+    /* background-image: url("flat-lay-ice-cream-cone-with-berries-with-copy-space.jpg"); */
+    background-position: start;
+    background-size: cover;
+    
     position: relative;
 }
 .cup{
@@ -249,10 +265,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
         
     }
     75%{
-        color: pink;
+        color: rgb(221, 96, 116);
     }
     to{
-        color: pink;
+        color: rgb(225, 61, 88);
     }
 }
 @keyframes feel{
@@ -269,10 +285,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     opacity: -0.1;
   }
   75%{
-    color: pink;
+    color: rgb(224, 116, 134);
   }
     to{
-        color: pink;
+        color: rgb(224, 45, 75);
     }
 }
 
@@ -285,7 +301,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     }
        25%{
          /* transform: translateY(100px); */
-         top: 25%;
+         top: 28%;
         
          
     }
@@ -369,7 +385,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
        opacity: -0.1;
     }
       50%{
-       opacity: 1;
+       opacity: -0.1;
     }
       75%{
        opacity: 1;
@@ -383,7 +399,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     width: 100vw;
     height: fit-content;
     padding-top: 5%;
-    background:linear-gradient(180deg,rgb(246, 198, 206) 20%,rgb(236, 123, 141) 70% , pink 80%)
+    background:linear-gradient(180deg,rgb(24, 58, 207),rgb(15, 239, 213) 50% , rgb(0, 0, 176) 150%)
 }
 
 
@@ -401,16 +417,27 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     border-radius: 0 10px 0 20px;
     margin: 5px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     flex-basis: 23%;
     background-color: azure;
 
 }
 .box h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .box img{
 width: 70px;
+height: 70px;
+}
+
+
+.box:hover{
+    transform: scale(1.2);
+    background-color: cornsilk;
 }
 
 .se{
@@ -456,16 +483,17 @@ top: 30%;
 z-index: 2;
 left: 10%;
 font-size: 80px;
-color: white;
-text-shadow: 0 0 10px black;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(240, 240, 240);
+text-shadow: 0 0 30px rgb(0, 0, 0);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 .p5{
     width: 100vw;
     height: 100vh;
-    background-image: url("top-view-ice-cream-cones-with-cherries.jpg");
+   background-image: url("top-view-ice-cream-cones-with-cherries.jpg"); 
+/*   background-image: url("popsicle-half-chocolate-glaze.jpg");*/
     background-repeat: no-repeat;
 background-size: cover;
     position: relative;
@@ -477,8 +505,9 @@ background-size: cover;
     right: 30px ;
 }
 .icec h1{
-    font-size: 80px;
+    font-size: 50px;
     color: white;
+    text-transform: uppercase;
     font-family:monospace;
 }
 .icec p{
@@ -801,7 +830,10 @@ right: 0%; opacity: -0.1;
 .p7{
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(180deg,red 20%,pink 60%);
+    background:linear-gradient(180deg,rgb(248, 81, 109) 10%, rgba(132, 0, 248, 0.961) 100%); 
+    /* background-image: url("flat-lay-raspberries-ice-cream-with-copy-space.jpg"); */
+    background-position: center;
+    background-size: cover;
 }
 .fon{
     display: grid;
@@ -819,10 +851,11 @@ border-left: 10px double black;
 margin: 50px;
 position: relative;
 top: 10%;
-left: -10px;
+left: 10px;
 border-radius: 50%;
 
-filter: drop-shadow(0 0 15px rgb(228, 232, 25));
+
+filter: drop-shadow(0 0 15px gold);
 }
 
 .fon1{
@@ -832,15 +865,15 @@ filter: drop-shadow(0 0 15px rgb(228, 232, 25));
 .fon1 h1{
     font-size: 100px;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgb(0, 217, 255);
+    text-shadow: 0 0 10px rgb(209, 243, 18);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .fon1 h3{
     font-size: 20px;
     text-transform: uppercase;
-    color: rgb(216, 75, 98);
-    
-    text-shadow: 0 0 20px rgb(28, 188, 199);
+    color: rgb(231, 223, 223);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+ 
 }
 .fon1 p{
     font-family:Georgia, 'Times New Roman', Times, serif;
